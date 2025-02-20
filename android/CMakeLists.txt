@@ -25,7 +25,7 @@ include_directories(
 # 1. Create imported target representing precompiled library
 # 2. Assign properties to the target, the file location for the precompiled binary
 # 3. Link the library to the target
-cmake_path(SET LIBPOCKETSPHINX ${CMAKE_CURRENT_SOURCE_DIR}/jniLibs/${ANDROID_ABI}/libpocketsphinx.so NORMALIZE)
+cmake_path(SET LIBPOCKETSPHINX ${CMAKE_CURRENT_SOURCE_DIR}/../../jniLibs/${ANDROID_ABI}/libpocketsphinx.so NORMALIZE)
 add_library(libpocketsphinx SHARED IMPORTED)
 set_target_properties(libpocketsphinx PROPERTIES IMPORTED_LOCATION ${LIBPOCKETSPHINX})
 

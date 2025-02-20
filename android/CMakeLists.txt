@@ -6,7 +6,9 @@ set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 20)
 
 # Define C++ library and add all sources
-add_library(${PACKAGE_NAME} SHARED 
+add_library(
+        ${PACKAGE_NAME}
+        SHARED 
 	src/main/cpp/cpp-adapter.cpp
 	../cpp/HybridPocketsphinx.cpp
 	../cpp/HybridPocketsphinx.hpp
@@ -17,9 +19,12 @@ add_library(${PACKAGE_NAME} SHARED
 include(${CMAKE_SOURCE_DIR}/../nitrogen/generated/android/Pocketsphinx+autolinking.cmake)
 
 # Set up local includes
-include_directories(
+target_include_directories(
+        ${PACKAGE_NAME}
+        PRIVATE
         "src/main/cpp"
         "../cpp"
+        "../cpp/pocketsphinx"
 )
 
 # 1. Create imported target representing precompiled library

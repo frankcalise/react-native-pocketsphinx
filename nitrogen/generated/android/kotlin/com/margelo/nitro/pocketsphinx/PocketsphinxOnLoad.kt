@@ -20,6 +20,17 @@ internal class PocketsphinxOnLoad {
     @JvmStatic
     fun initializeNative() {
       if (didLoad) return
+
+      // Load the SHARED library - this works successfully
+      // try {
+      //   Log.i(TAG, "Loading SHARED pocketsphinx C++ library...")
+      //   System.loadLibrary("pocketsphinx")
+      //   Log.i(TAG, "Successfully loaded SHARED pocketsphinx C++ library!")
+      // } catch (e: Error) {
+      //   Log.e(TAG, "Failed to load SHARED pocketsphinx C++ library!", e)
+      //   throw e
+      // }
+
       try {
         Log.i(TAG, "Loading Pocketsphinx C++ library...")
         System.loadLibrary("Pocketsphinx")

@@ -8,5 +8,6 @@ class HybridPocketsphinx : public HybridPocketsphinxSpec {
         HybridPocketsphinx() : HybridObject(TAG), HybridPocketsphinxSpec() {}
        
         double sum(double a, double b) override;
+        std::string getPhonesFromAudio(const std::string &audioPath) override;
     };
 } // namespace margelo::nitro::pocketsphinx

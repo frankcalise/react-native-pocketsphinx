@@ -1,0 +1,23 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": [
+    "pocketsphinx"
+  ],
+  "ios": {
+    "iosModuleName": "Pocketsphinx"
+  },
+  "android": {
+    "androidNamespace": [
+      "pocketsphinx"
+    ],
+    "androidCxxLibName": "Pocketsphinx"
+  },
+  "autolinking": {
+    "Pocketsphinx": {
+      "cpp": "HybridPocketsphinx"
+    }
+  },
+  "ignorePaths": [
+    "**/node_modules"
+  ]
+}

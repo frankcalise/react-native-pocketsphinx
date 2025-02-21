@@ -11,6 +11,17 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C7F03D984D214EB39A778855 /* en-us.lm.bin in Resources */ = {isa = PBXBuildFile; fileRef = E6B26C1D279E4EC1880399F6 /* en-us.lm.bin */; };
+		8EE95810F8744D12A17D8406 /* en-us-phone.lm.bin in Resources */ = {isa = PBXBuildFile; fileRef = B53E0CCF7D7646B8B8FA7007 /* en-us-phone.lm.bin */; };
+		30B17840861F451D8DFB179B /* cmudict-en-us.dict in Resources */ = {isa = PBXBuildFile; fileRef = C99706691D40403CAFCD5310 /* cmudict-en-us.dict */; };
+		26BFAA86578441CCBA13FF16 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7044EDA30FB8427D9A72CA62 /* README */; };
+		AFEDE96ACBBB4061A6290EA1 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = AB78959F118B4DE2A5C69B05 /* feat.params */; };
+		C828E7BF91A9459FA5518B36 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 14D9F97AC6A74C9C8F5716DC /* mdef */; };
+		EBC4A19264C6427CA9204D7B /* means in Resources */ = {isa = PBXBuildFile; fileRef = 8FCC51DD2BE5493C8E152C7F /* means */; };
+		F4C487174BFD477EBC250E34 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 4C25E9C9117C429082B9E675 /* noisedict */; };
+		A9496DCAE3864B659754E2A2 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 86D0AFBBE4D248E3ABBB5B6B /* sendump */; };
+		389CA0637B3A44628E4D9197 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 5B2B38C30ED54356836A5D55 /* transition_matrices */; };
+		6CB057E43CBA4A8AB5E771E7 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = CA011F80CB7A4223ABA7192D /* variances */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,17 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PocketsphinxExample/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PocketsphinxExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		E6B26C1D279E4EC1880399F6 /* en-us.lm.bin */ = {isa = PBXFileReference; name = "en-us.lm.bin"; path = "../assets/model/en-us.lm.bin"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B53E0CCF7D7646B8B8FA7007 /* en-us-phone.lm.bin */ = {isa = PBXFileReference; name = "en-us-phone.lm.bin"; path = "../assets/model/en-us-phone.lm.bin"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C99706691D40403CAFCD5310 /* cmudict-en-us.dict */ = {isa = PBXFileReference; name = "cmudict-en-us.dict"; path = "../assets/model/cmudict-en-us.dict"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7044EDA30FB8427D9A72CA62 /* README */ = {isa = PBXFileReference; name = "README"; path = "../assets/model/en-us/README"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB78959F118B4DE2A5C69B05 /* feat.params */ = {isa = PBXFileReference; name = "feat.params"; path = "../assets/model/en-us/feat.params"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		14D9F97AC6A74C9C8F5716DC /* mdef */ = {isa = PBXFileReference; name = "mdef"; path = "../assets/model/en-us/mdef"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FCC51DD2BE5493C8E152C7F /* means */ = {isa = PBXFileReference; name = "means"; path = "../assets/model/en-us/means"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C25E9C9117C429082B9E675 /* noisedict */ = {isa = PBXFileReference; name = "noisedict"; path = "../assets/model/en-us/noisedict"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86D0AFBBE4D248E3ABBB5B6B /* sendump */ = {isa = PBXFileReference; name = "sendump"; path = "../assets/model/en-us/sendump"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B2B38C30ED54356836A5D55 /* transition_matrices */ = {isa = PBXFileReference; name = "transition_matrices"; path = "../assets/model/en-us/transition_matrices"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA011F80CB7A4223ABA7192D /* variances */ = {isa = PBXFileReference; name = "variances"; path = "../assets/model/en-us/variances"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +115,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				A444C1714D84453D979514E3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,6 +138,25 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		A444C1714D84453D979514E3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E6B26C1D279E4EC1880399F6 /* en-us.lm.bin */,
+				B53E0CCF7D7646B8B8FA7007 /* en-us-phone.lm.bin */,
+				C99706691D40403CAFCD5310 /* cmudict-en-us.dict */,
+				7044EDA30FB8427D9A72CA62 /* README */,
+				AB78959F118B4DE2A5C69B05 /* feat.params */,
+				14D9F97AC6A74C9C8F5716DC /* mdef */,
+				8FCC51DD2BE5493C8E152C7F /* means */,
+				4C25E9C9117C429082B9E675 /* noisedict */,
+				86D0AFBBE4D248E3ABBB5B6B /* sendump */,
+				5B2B38C30ED54356836A5D55 /* transition_matrices */,
+				CA011F80CB7A4223ABA7192D /* variances */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -185,6 +227,17 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C7F03D984D214EB39A778855 /* en-us.lm.bin in Resources */,
+				8EE95810F8744D12A17D8406 /* en-us-phone.lm.bin in Resources */,
+				30B17840861F451D8DFB179B /* cmudict-en-us.dict in Resources */,
+				26BFAA86578441CCBA13FF16 /* README in Resources */,
+				AFEDE96ACBBB4061A6290EA1 /* feat.params in Resources */,
+				C828E7BF91A9459FA5518B36 /* mdef in Resources */,
+				EBC4A19264C6427CA9204D7B /* means in Resources */,
+				F4C487174BFD477EBC250E34 /* noisedict in Resources */,
+				A9496DCAE3864B659754E2A2 /* sendump in Resources */,
+				389CA0637B3A44628E4D9197 /* transition_matrices in Resources */,
+				6CB057E43CBA4A8AB5E771E7 /* variances in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,8 @@ set_target_properties(libpocketsphinx PROPERTIES IMPORTED_LOCATION ${LIBPOCKETSP
 target_include_directories(
         ${PACKAGE_NAME}
         PRIVATE
-        ../cpp/pocketsphinx
+        ../cpp/libpocketsphinx
+        ../cpp/libpocketsphinx/pocketsphinx
 )
 
 find_library(LOG_LIB log)

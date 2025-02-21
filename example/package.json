@@ -11,6 +11,7 @@
     "pod": "bundle install && bundle exec pod install --project-directory=ios"
   },
   "dependencies": {
+    "@dr.pogodin/react-native-fs": "^2.32.0",
     "react": "19.0.0",
     "react-native": "0.78.0",
     "react-native-nitro-modules": "*"

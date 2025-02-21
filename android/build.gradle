@@ -20,7 +20,7 @@ def isNewArchitectureEnabled() {
 
 apply plugin: "com.android.library"
 apply plugin: 'org.jetbrains.kotlin.android'
-apply from: '../nitrogen/generated/android/Pocketsphinx+autolinking.gradle'
+apply from: '../nitrogen/generated/android/NitroPocketSphinx+autolinking.gradle'
 
 if (isNewArchitectureEnabled()) {
   apply plugin: "com.facebook.react"
@@ -141,7 +141,7 @@ dependencies {
 if (isNewArchitectureEnabled()) {
   react {
     jsRootDir = file("../src/")
-    libraryName = "Pocketsphinx"
+    libraryName = "NitroPocketSphinx"
     codegenJavaPackageName = "com.pocketsphinx"
   }
 }

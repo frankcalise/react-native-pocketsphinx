@@ -10,13 +10,13 @@ import com.facebook.react.module.model.ReactModuleInfoProvider;
 import com.facebook.react.TurboReactPackage;
 import com.margelo.nitro.core.HybridObject;
 import com.margelo.nitro.core.HybridObjectRegistry;
-import com.margelo.nitro.pocketsphinx.PocketsphinxOnLoad;
+import com.margelo.nitro.pocketsphinx.NitroPocketSphinxOnLoad;
 
 
 import java.util.HashMap;
 import java.util.function.Supplier;
 
-public class PocketsphinxPackage extends TurboReactPackage {
+public class NitroPocketSphinxPackage extends TurboReactPackage {
   @Nullable
   @Override
   public NativeModule getModule(String name, ReactApplicationContext reactContext) {
@@ -31,6 +31,6 @@ public class PocketsphinxPackage extends TurboReactPackage {
   }
 
   static {
-    PocketsphinxOnLoad.initializeNative();
+    NitroPocketSphinxOnLoad.initializeNative();
   }
 }

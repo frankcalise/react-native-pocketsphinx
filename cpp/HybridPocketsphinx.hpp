@@ -1,11 +1,11 @@
 #pragma once
 #include <vector>
-#include "HybridPocketsphinxSpec.hpp"
+#include "HybridPocketSphinxSpec.hpp"
 
 namespace margelo::nitro::pocketsphinx {
-class HybridPocketsphinx : public HybridPocketsphinxSpec {
+class HybridPocketSphinx : public HybridPocketSphinxSpec {
     public:
-        HybridPocketsphinx() : HybridObject(TAG), HybridPocketsphinxSpec() {}
+    HybridPocketSphinx() : HybridObject(TAG), HybridPocketSphinxSpec() {}
        
         double sum(double a, double b) override;
         std::string getPhonesFromAudio(const std::string &audioPath) override;

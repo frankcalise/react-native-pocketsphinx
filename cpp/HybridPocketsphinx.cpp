@@ -1,12 +1,12 @@
-#include "HybridPocketsphinx.hpp"
+#include "HybridPocketSphinx.hpp"
 
 namespace margelo::nitro::pocketsphinx {
 
-double HybridPocketsphinx::sum(double a, double b) {
+double HybridPocketSphinx::sum(double a, double b) {
     return a + b;
 }
 
-std::string HybridPocketsphinx::getPhonesFromAudio(const std::string &audioPath) {
+std::string HybridPocketSphinx::getPhonesFromAudio(const std::string &audioPath) {
     return "Hello, World!";
 }
 

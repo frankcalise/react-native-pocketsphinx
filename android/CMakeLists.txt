@@ -1,7 +1,7 @@
-project(Pocketsphinx)
+project(NitroPocketSphinx)
 cmake_minimum_required(VERSION 3.9.0)
 
-set (PACKAGE_NAME Pocketsphinx)
+set (PACKAGE_NAME NitroPocketSphinx)
 set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 20)
 
@@ -10,29 +10,32 @@ add_library(
         ${PACKAGE_NAME}
         SHARED 
 	src/main/cpp/cpp-adapter.cpp
-	../cpp/HybridPocketsphinx.cpp
-	../cpp/HybridPocketsphinx.hpp
-        
+	../cpp/HybridPocketSphinx.cpp
+	../cpp/HybridPocketSphinx.hpp
 )
 
 # Add Nitrogen specs :)
-include(${CMAKE_SOURCE_DIR}/../nitrogen/generated/android/Pocketsphinx+autolinking.cmake)
+include(${CMAKE_SOURCE_DIR}/../nitrogen/generated/android/NitroPocketSphinx+autolinking.cmake)
 
 # Set up local includes
-target_include_directories(
-        ${PACKAGE_NAME}
-        PRIVATE
+include_directories(
         "src/main/cpp"
         "../cpp"
-        "../cpp/pocketsphinx"
 )
 
 # 1. Create imported target representing precompiled library
 # 2. Assign properties to the target, the file location for the precompiled binary
-# 3. Link the library to the target
+# 3. Include the library headers
+# 4. Link the library to the target
 cmake_path(SET LIBPOCKETSPHINX ${CMAKE_CURRENT_SOURCE_DIR}/jniLibs/${ANDROID_ABI}/libpocketsphinx.so NORMALIZE)
 add_library(libpocketsphinx SHARED IMPORTED)
 set_target_properties(libpocketsphinx PROPERTIES IMPORTED_LOCATION ${LIBPOCKETSPHINX})
+
+target_include_directories(
+        ${PACKAGE_NAME}
+        PRIVATE
+        ../cpp/pocketsphinx
+)
 
 find_library(LOG_LIB log)
 
@@ -41,5 +44,5 @@ target_link_libraries(
         ${PACKAGE_NAME}
         ${LOG_LIB}
         android                                   # <-- Android core
-        libpocketsphinx                     # <-- Pocketsphinx
+        libpocketsphinx                     # <-- PocketSphinx
 )

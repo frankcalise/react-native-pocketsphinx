@@ -1,0 +1,49 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/model/en-us.lm.bin",
+      "sha1": "d8f7ce38336fd3a4312a9852088a7a2e4fa8795c"
+    },
+    {
+      "path": "assets/model/en-us-phone.lm.bin",
+      "sha1": "ea850bcd1c065c4d738368c5c1d8e676c1d52bec"
+    },
+    {
+      "path": "assets/model/cmudict-en-us.dict",
+      "sha1": "78e288cb1972421197ae994fe8ac1404a3b5455a"
+    },
+    {
+      "path": "assets/model/en-us/README",
+      "sha1": "50dcb87d49073b34b59b2ad2da230de611b55e11"
+    },
+    {
+      "path": "assets/model/en-us/feat.params",
+      "sha1": "02ffa43fcda24bef810170ee88d72d10c52514dd"
+    },
+    {
+      "path": "assets/model/en-us/mdef",
+      "sha1": "4a9852fbe6973c79674b09e7917b45e278475122"
+    },
+    {
+      "path": "assets/model/en-us/means",
+      "sha1": "b920c5809eeb03961e9e8e34ce8a4a3f0c48204d"
+    },
+    {
+      "path": "assets/model/en-us/noisedict",
+      "sha1": "e25038e911a50240cca4239250644d5ec24c6210"
+    },
+    {
+      "path": "assets/model/en-us/sendump",
+      "sha1": "7944cb56cff7936075c32ab4b7604f088d351a45"
+    },
+    {
+      "path": "assets/model/en-us/transition_matrices",
+      "sha1": "c4b1734b06507d61969c73c60a8ddb0be6fd7366"
+    },
+    {
+      "path": "assets/model/en-us/variances",
+      "sha1": "8cdb7288da773d7eb7f11befd7520d974ce34db9"
+    }
+  ]
+}

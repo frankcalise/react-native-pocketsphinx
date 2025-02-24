@@ -14,7 +14,6 @@ namespace margelo::nitro::pocketsphinx {
     HybridObject::loadHybridMethods();
     // load custom methods/properties
     registerHybrids(this, [](Prototype& prototype) {
-      prototype.registerHybridMethod("sum", &HybridPocketSphinxSpec::sum);
       prototype.registerHybridMethod("getPhonesFromAudio", &HybridPocketSphinxSpec::getPhonesFromAudio);
     });
   }

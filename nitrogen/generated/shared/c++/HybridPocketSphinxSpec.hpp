@@ -48,7 +48,6 @@ namespace margelo::nitro::pocketsphinx {
 
     public:
       // Methods
-      virtual double sum(double num1, double num2) = 0;
       virtual std::string getPhonesFromAudio(const std::string& audioPath, const std::string& acousticModelPath, const std::string& languageModelPath, const std::string& dictionaryPath) = 0;
 
     protected:

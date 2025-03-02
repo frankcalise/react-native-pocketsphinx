@@ -77,6 +77,8 @@
  * @file prim_type.h
  * @brief Basic type definitions used in Sphinx. 
  */
+
+#include <stdint.h>
  
 #ifdef __cplusplus
 extern "C" {
@@ -116,7 +118,7 @@ typedef union anytype_s {
 
 /* Use C99 types if available */
 #if defined(HAVE_STDINT_H) || (defined(__STDC_VERSION__) &&  __STDC_VERSION__ >= 199901L)
-#include <stdint.h>
+
 typedef int32_t		int32;
 typedef int16_t		int16;
 typedef int8_t		int8;

@@ -1799,7 +1799,7 @@ SPEC CHECKSUMS:
   glog: eb93e2f488219332457c3c4eafd2738ddc7e80b8
   hermes-engine: b417d2b2aee3b89b58e63e23a51e02be91dc876d
   NitroModules: 0b5ab12fb3d174f2dbf9101e167342cd1406cf7b
-  NitroPocketSphinx: c65bcbed3514f2a928da7c2af2cde2ae2cc1227c
+  NitroPocketSphinx: 04dcf6ade2cfab6eda6128eefb9bd34ccb1f0a66
   RCT-Folly: 36fe2295e44b10d831836cc0d1daec5f8abcf809
   RCTDeprecation: b2eecf2d60216df56bc5e6be5f063826d3c1ee35
   RCTRequired: 78522de7dc73b81f3ed7890d145fa341f5bb32ea
@@ -1861,6 +1861,6 @@ SPEC CHECKSUMS:
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: afd04ff05ebe0121a00c468a8a3c8080221cb14c
 
-PODFILE CHECKSUM: 5705f27e269a67c82be5f5246b559e9dac32d4a1
+PODFILE CHECKSUM: 194b8398bb51e3bc6d04291c5f15d0993c793198
 
 COCOAPODS: 1.15.2

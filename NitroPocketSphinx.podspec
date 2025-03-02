@@ -13,11 +13,6 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => min_ios_version_supported, :visionos => 1.0 }
   s.source       = { :git => "https://github.com/frankcalise/react-native-pocketsphinx.git", :tag => "#{s.version}" }
 
-  # add the libpocketsphinx.xcframework to the podspec
-  
-  s.public_header_files = [
-    "cpp/libpocketsphinx/**/*.h"
-  ]
   s.vendored_frameworks = "ios/libpocketsphinx.xcframework"
   
   s.source_files = [
@@ -32,10 +27,8 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     # C++ compiler flags, mainly for folly.
     "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) FOLLY_NO_CONFIG FOLLY_CFG_NO_COROUTINES",
-    "SWIFT_INCLUDE_PATHS" => "$(PODS_TARGET_SRCROOT)/cpp",
-    "HEADER_SEARCH_PATHS" => "$(inherited) $(PODS_TARGET_SRCROOT)/cpp/libpocketsphinx $(PODS_TARGET_SRCROOT)/cpp/libpocketsphinx/pocketsphinx",
+    "HEADER_SEARCH_PATHS" => "$(inherited) $(PODS_TARGET_SRCROOT)/cpp/libpocketsphinx $(PODS_TARGET_SRCROOT)/cpp/libpocketsphinx/pocketsphinx"
   }
-
 
   load 'nitrogen/generated/ios/NitroPocketSphinx+autolinking.rb'
   add_nitrogen_files(s)

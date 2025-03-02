@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
     "cpp/libpocketsphinx/**/*.h"
   ]
   s.vendored_frameworks = "ios/libpocketsphinx.xcframework"
-  s.static_framework = true
   
   s.source_files = [
     # Implementation (Swift)

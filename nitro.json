@@ -2,7 +2,7 @@
   "$schema": "https://nitro.margelo.com/nitro.schema.json",
   "cxxNamespace": ["pocketsphinx"],
   "ios": {
-    "iosModuleName": "PocketSphinx"
+    "iosModuleName": "NitroPocketSphinx"
   },
   "android": {
     "androidNamespace": ["pocketsphinx"],

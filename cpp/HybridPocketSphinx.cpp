@@ -1,7 +1,12 @@
 #include <pocketsphinx.h>
 #include "HybridPocketSphinx.hpp"
 
-#include <android/log.h>
+#ifdef __ANDROID__
+    #include <android/log.h>
+#elif __APPLE__
+    #include <os/log.h>
+#endif
+
 #include <errno.h>
 #include <sys/stat.h>
 
@@ -11,8 +16,13 @@ bool fileExists(const std::string &path) {
 }
 
 #define LOG_TAG "HybridPocketSphinx"
-#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
-#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+#ifdef defined(__ANDROID__)
+    #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+    #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
+#elif defined(__APPLE__)
+    #define LOGI(fmt, ...) os_log(OS_LOG_DEFAULT, "%{public}s INFO: " fmt, LOG_TAG, ##__VA_ARGS__)
+    #define LOGE(fmt, ...) os_log_error(OS_LOG_DEFAULT, "%{public}s ERROR: " fmt, LOG_TAG, ##__VA_ARGS__)
+#endif
 
 namespace margelo::nitro::pocketsphinx {
 
@@ -25,15 +35,6 @@ std::string HybridPocketSphinx::getPhonesFromAudio(
     FILE *fh;
     size_t len;
     ps_config_t *config;
-
-    LOGI("audioPath: %s", audioPath.c_str());
-    LOGI("acousticModelPath: '%s'", acousticModelPath.c_str());
-    LOGI("languageModelPath: '%s'", languageModelPath.c_str());
-    LOGI("dictionaryPath: '%s'", dictionaryPath.c_str());
-
-    LOGI("Acoustic model exists: %d", fileExists(acousticModelPath));
-    LOGI("Language model exists: %d", fileExists(languageModelPath));
-    LOGI("Dictionary exists: %d", fileExists(dictionaryPath));
 
     /* Look for a single audio file as input parameter. */
     if ((fh = fopen(audioPath.c_str(), "rb")) == NULL) {
@@ -96,9 +97,9 @@ std::string HybridPocketSphinx::getPhonesFromAudio(
     std::string words = "";
     ps_seg_t *seg = ps_seg_iter(ps);
     if (seg == NULL) {
-        std::cerr << "No segmentation available." << std::endl;
+        //std::cerr << "No segmentation available." << std::endl;
     } else {
-        std::cout << "Phonemes detected:\n";
+        //std::cout << "Phonemes detected:\n";
         while (seg != NULL) {
             const char *word;
             int startFrame, endFrame;

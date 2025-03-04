@@ -16,10 +16,6 @@ bool fileExists(const std::string &path) {
 
 namespace margelo::nitro::pocketsphinx {
 
-double HybridPocketSphinx::sum(double a, double b) {
-    return a + b;
-}
-
 std::string HybridPocketSphinx::getPhonesFromAudio(
     const std::string& audioPath,
     const std::string& acousticModelPath,

@@ -16,10 +16,10 @@ bool fileExists(const std::string &path) {
 }
 
 #define LOG_TAG "HybridPocketSphinx"
-#ifdef defined(__ANDROID__)
+#ifdef __ANDROID__
     #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
     #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
-#elif defined(__APPLE__)
+#elif __APPLE__
     #define LOGI(fmt, ...) os_log(OS_LOG_DEFAULT, "%{public}s INFO: " fmt, LOG_TAG, ##__VA_ARGS__)
     #define LOGE(fmt, ...) os_log_error(OS_LOG_DEFAULT, "%{public}s ERROR: " fmt, LOG_TAG, ##__VA_ARGS__)
 #endif
